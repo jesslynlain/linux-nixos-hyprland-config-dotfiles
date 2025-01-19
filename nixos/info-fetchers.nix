@@ -21,7 +21,7 @@
     # vdpauinfo
     # libva-utils
     nvtopPackages.nvidia
-    nvtopPackages.intel
+    nvtopPackages.amd
     wlr-randr
     gpu-viewer
     dig
