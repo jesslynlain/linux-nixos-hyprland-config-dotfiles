@@ -3,7 +3,7 @@
 {
   # Linux Kernel
   boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
-  boot.kernelParams = [ 
+  boot.kernelParams = [
     "splash"
     "quiet"
     "fbcon=nodefer"
@@ -14,11 +14,13 @@
     "video4linux"
     "acpi_rev_override=5"
     "security=selinux"
+    # "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
+    "i915.enable_dcpd_backlight=1"
   ];
   # boot.kernelPatches = [ {
   #      name = "selinux-config";
   #      patch = null;
-  #      extraConfig = '' 
+  #      extraConfig = ''
   #              SECURITY_SELINUX y
   #              SECURITY_SELINUX_BOOTPARAM n
   #              SECURITY_SELINUX_DEVELOP y

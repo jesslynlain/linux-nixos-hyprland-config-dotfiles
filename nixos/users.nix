@@ -12,7 +12,8 @@
       youtube-music
       discord
       tdesktop
-      vscodium
+      # vscodium
+      code-cursor
       brave
     ];
   };
